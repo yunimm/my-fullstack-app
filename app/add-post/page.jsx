@@ -18,8 +18,8 @@ export default function AddPost() {
                 },
                 body: JSON.stringify({ title, content }),
             });
-            router.refresh();
-            console.log('after refresh');
+            // router.refresh();
+            // console.log('after refresh');
         } catch (error) {
             console.error(error);
         }
