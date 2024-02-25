@@ -8,6 +8,7 @@ export default function DeletePostButton({ postId }) {
                 method: 'DELETE',
             });
             router.refresh();
+            console.log('after refresh');
         } catch (error) {
             console.error(error);
         }
