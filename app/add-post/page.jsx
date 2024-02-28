@@ -15,9 +15,9 @@ export default function AddPost() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Cache-Control': 'no-cache, no-store, must-revalidate'
                 },
                 body: JSON.stringify({ title, content }),
-                cache: 'no-store',
             });
             router.refresh();
             console.log('after refresh');
