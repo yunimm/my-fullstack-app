@@ -7,8 +7,8 @@ export default function DeletePostButton({ postId }) {
             await fetch(`/api/post/${postId}`, {
                 method: 'DELETE',
             });
-            // router.refresh();
-            // console.log('after refresh');
+            router.refresh();
+            console.log('after refresh');
         } catch (error) {
             console.error(error);
         }

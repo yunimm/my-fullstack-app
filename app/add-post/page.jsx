@@ -17,9 +17,10 @@ export default function AddPost() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ title, content }),
+                cache: 'no-store',
             });
-            // router.refresh();
-            // console.log('after refresh');
+            router.refresh();
+            console.log('after refresh');
         } catch (error) {
             console.error(error);
         }
